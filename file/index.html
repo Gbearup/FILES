@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花草feifei-rev1</title>
+    <!-- link css 順序 1.bs 2.self -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+                url(./下載.jpg);
+            /* 淡化的線性漸層加背景圖片 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .social-icon {
+            font-size: 15px;
+            /* 圖示大小 */
+            margin: 0 5px;
+            /* 增加按鈕間隔 */
+            /* display: inline-block; */
+            text-decoration: none;
+            padding: 5px;
+            /* 圓形背景大小 */
+            border-radius: 5px;
+            /* 圓形背景 */
+            transition: all 0.3s ease;
+            /* 加入過渡效果 */
+        }
+
+        .line-icon {
+            background-color: #00C300;
+            /* LINE 綠色 */
+            color: white;
+        }
+
+        .facebook-icon {
+            background-color: #1877F2;
+            /* Facebook 藍色 */
+            color: white;
+        }
+
+        .instagram-icon {
+            background: linear-gradient(45deg, #f58529, #d62976, #962fbf, #4c68d7);
+            /* Instagram 漸層顏色 */
+            color: white;
+        }
+
+        /* 滑鼠懸停時變化 */
+        .social-icons a:hover {
+            opacity: 0.8;
+            transform: scale(1.1);
+            /* 懸停時放大 */
+        }
+
+        footer {
+            width: 100%;
+            height: 120px;
+            background-color: burlywood;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- 第一部分  nav -->
+    <!-- container -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)">花草feifei</a>
+                <a class="navbar-brand" href="#">
+                    <img src="./0.logo.jpg" alt="Grass" style="width:40px;" class="rounded-pill">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">永生花的由來</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#page1">DIY療癒手作</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#page2">諮詢需求</a>
+
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- 第二部分  carousel -->
+    <!-- 1218先加一個container -->
+    <div class="container-fluid vh-50">
+
+        <!-- 1218複製w3c程式碼 -->
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./basket.jpg" alt="basket" class="d-block w-100" style="height:60vh; object-fit:cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./snowman.jpg" alt="snowman" class="d-block w-100" style="height:60vh; object-fit:cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./su-1.jpg" alt="New York" class="d-block w-100" style="height:60vh; object-fit:cover;">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+
+
+
+        <!-- 第三部分 原home -->
+        <!-- container -->
+        <div id="home"></div>
+
+        <div class="container-fluid">
+            <!-- <div class="box bg-danger vh-100 d-flex justify-content-center align-items-center"> -->
+
+            <div class="mb-3 mt-3">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-5">
+                        <p></p>
+                        <p>永生花的由來有一個感人至深的美麗故事。</p>
+                        <p>有一對深愛的情侶即將分離。男孩必須參加家鄉戰爭，保衛自己的家人。這次的告別也許是永別。男孩留下了剛摘下的玫瑰和用紅蠟封好的信給女孩。他告訴女孩：當這束玫瑰最後一片花瓣掉落時，就代表她已經忘記了他，開始了自己全新的生活。
+                        </p>
+                        <p>女孩把玫瑰放在花瓶裡，雙手合十向上帝祈禱</p>
+                        戰爭的血腥消息不斷傳來，那些玫瑰花慢慢失去了露水、失去了鮮艷，連香氣也變得淡了，但男孩的消息卻一直沒有。奇跡般的是，花瓶裡的花朵從未掉下一片花瓣。最終，在一個清晨，身披凱旋之衣，身上布滿傷痕的男孩回到了女孩的家門口。從此，他們牽手走過一生，再沒有分開過。而那束乾枯但依然挺立的玫瑰花也在那裡。
+                        </p>
+                        <p>這對被幸運之神眷顧的愛人的故事流傳開來。在歐洲，只要男孩和女孩相愛，就會留下一束玫瑰，或把花瓣放在聖經裡，或製成永不凋謝的永生花。以此祈禱能夠像故事中的他們一樣幸福和幸運，直至永恆。這也是永生花的花語和寓意。
+                        </p>
+                        能夠保持美麗花姿3年以上的永生花，象徵著「永遠不變的愛情」、「永恆幸福」、「美麗長存」。情人節送女生永生花，不僅是表達愛意，還承諾「相伴一生」。
+                    </div>
+
+
+                    <div class="col-6 d-flex justify-content-center align-items-center">
+                        <img src="./0.jpg" alt="" style="height:600px">
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 第五部分 原page1 -->
+    <!-- container -->
+    <div id="page1"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-4">
+                <iframe width="625" height="385"
+                    src="https://www.youtube.com/embed/umhvFa2WQwI?pp=ygUV5rC455Sf6Iqx5Yi25L2c5pa55rOV" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="col-7">
+                <p></p>
+                <p>在快節奏與壓力重重的生活中，我們常常忘記停下來呼吸。手工花小桌花的製作是一個放鬆心情的好方法。</p>
+                <p>當雙手捏造每一朵花，焦慮漸漸消散，心情也變得輕鬆。這些小小的花朵不僅帶來視覺的美感，更讓我們重新找回內心的寧靜。</p>
+                <p>在忙碌的生活中，透過手作花卉，我們能暫時放下壓力，享受片刻的平靜與美麗。</p>
+            </div>
+        </div>
+        <!-- <div class="box bg-danger vh-100 d-flex justify-content-center align-items-center">    </div> -->
+
+    </div>
+
+
+    <!-- 加了IG有音樂的影片 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4 d-flex justify-content-center align-items-center">
+                聖誕節快到了，讓我們來看看美麗又有氣質的老闆娘手作聖誕花圈吧~
+            </div>
+            <div class="col">
+                <iframe src="https://www.instagram.com/p/DBSYEh_hd0u/embed" width="500" height="500" frameborder="0"
+                    scrolling="no" allowtransparency="true"></iframe>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 花束圖片展示區 -->
+    <div class="container-fluid">
+        <div class="mb-3 mt-3">
+            <div class="row">
+                <div class="col">
+                    <img src="./6.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./7.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./8.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./9.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./10.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./11.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+        心動下訂請點選此
+        <a
+            href="https://l.instagram.com/?u=https%3A%2F%2Fforms.gle%2Fk9Uxc2asrG2jiuU76&e=AT3xskqr03uPSqIB2vPuBatn9cWUZFKqcan5IM8G_rTjj28tgxPK3unNOtoz9N44uUZ1Hiq0fvAJz6Dm0ABORjFfmn-_RPNYF-sG6hg">
+            週花訂購表單</a>
+        <a
+            href="https://l.instagram.com/?u=https%3A%2F%2Fpinkoi.com%2Fstore%2Fhuatsaofeifei%3Futm_campaign%3Dkoc%26utm_content%3Dhuatsaofeifei%26utm_medium%3Dios_share%26utm_source%3DCopy%26utm_term%3Dstore&e=AT2Oq3Xtafc4i5D4qvD0_NwLuV6ds5jX4mEExsu8EDvvmKh4DxBMQ5ipuZn7u-65RBxwJSTJwuJgxn-UD2SHtQA7h8cNmcwRno29zw4">
+            Poikoi訂購 </a>
+
+
+
+
+        <div style="height: 50px;"></div>
+        <!-- 第四部分 原page2 -->
+        <!-- container -->
+        <div id="page2"></div>
+
+        <form action="/action_page.php">
+            <div class="container-fluid">
+                <h2>線上表單－專人諮詢</h2>
+                ❀ 若對於網站內容有疑問、對於訂購有問題、或有任何建議的話，歡迎使用以下表單，來訊詢問，謝謝！
+                <div class="mb-3 mt-3">
+                    <form>
+                        <div class="row">
+                            <div class="col-1">
+                                <label for="name" class="form-label">&nbsp&nbsp&nbsp姓名:</label>
+                            </div>
+                            <div class="col-11">
+                                <input type="text" class="form-control" placeholder="請輸入姓名" name="name">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-1">
+                                <label for="number" class="form-label">&nbsp&nbsp&nbsp聯絡電話:</label>
+                            </div>
+                            <div class="col-11">
+                                <input type="number" class="form-control" placeholder="請輸入電話號碼" name="phoneNumber">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-1">
+                                <label for="lineId" class="form-label">&nbsp&nbsp&nbspLINE ID:</label>
+                            </div>
+                            <div class="col-11">
+                                <input type="text" class="form-control" placeholder="請輸入LINE ID" name="lineId">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-1">
+                                <label for="email" class="form-label">&nbsp&nbsp&nbspE-mail:</label>
+                            </div>
+                            <div class="col-11">
+                                <input type="text" class="form-control" placeholder="請輸入E-mail" name="email">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="col-1">
+                                <label for="browser" class="form-label">&nbsp&nbsp&nbsp需求花禮</label>
+                            </div>
+
+                            <div class="col-11">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
+                                        value="something" checked>
+                                    <label class="form-check-label" for="check1">鮮花花束</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check2" name="option2"
+                                        value="something">
+                                    <label class="form-check-label" for="check2">鮮花桌花</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check3" name="option3"
+                                        value="something">
+                                    <label class="form-check-label" for="check3">永生乾燥花束</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check4" name="option4"
+                                        value="something">
+                                    <label class="form-check-label" for="check4">永生乾燥桌花</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check5" name="option5"
+                                        value="something">
+                                    <label class="form-check-label" for="check5">永生相關花禮</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check6" name="option6"
+                                        value="something">
+                                    <label class="form-check-label" for="check6">高架花籃</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check7" name="option7"
+                                        value="something">
+                                    <label class="form-check-label" for="check7">提籃花</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check8" name="option8"
+                                        value="something">
+                                    <label class="form-check-label" for="check8">植栽</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check9" name="option9"
+                                        value="something">
+                                    <label class="form-check-label" for="check9">其他</label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="col-1">
+                                <label for="browser" class="form-label">&nbsp&nbsp&nbsp需求目的</label>
+                            </div>
+
+                            <div class="col-11">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check1" name="option1"
+                                        value="something" checked>
+                                    <label class="form-check-label" for="check1">送禮</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check2" name="option2"
+                                        value="something">
+                                    <label class="form-check-label" for="check2">祝賀</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check3" name="option3"
+                                        value="something">
+                                    <label class="form-check-label" for="check3">節日</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check4" name="option4"
+                                        value="something">
+                                    <label class="form-check-label" for="check4">商用</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check5" name="option5"
+                                        value="something">
+                                    <label class="form-check-label" for="check5">婚禮</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="check6" name="option6"
+                                        value="something">
+                                    <label class="form-check-label" for="check6">其他</label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-1">
+                                <label for="comment">其他需求服務:</label>
+                            </div>
+                            <div class="col-11">
+                                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                        <p>謝謝您的主動聯絡，請留下要您的聯繫資料與諮詢的問題，我們會以您留下的聯繫方式盡快進行回覆。</p>
+                    </form>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- 第六部分 footer -->
+            <footer>
+                <div class="container-fluid">
+                    <div class="mb-3 mt-3">
+                        <div class="row">
+
+                            <div class="col-4">
+                                <p></p>
+                                <div>🌹法國AAFF Niveau III高級證照</div>
+                                <div>🌷日本AUBE 不凋花協會證書/講師資格</div>
+                                <div>🚚服務範圍：雙北、桃園地區</div>
+                                <div>🏡門市資訊: 新北市林口區南勢四街196巷17號, New Taipei City 244</div>
+                            </div>
+
+                            <div class="col-3">
+                                <p></p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9106.330018627279!2d121.3537992533171!3d25.073089212784648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7e0e9cd0d4b%3A0xc537d2f72ff8a850!2z6Iqx6I2JZmVpIGZlaeiKseiXneW3peS9nOWupA!5e0!3m2!1szh-TW!2stw!4v1730341059051!5m2!1szh-TW!2stw"
+                                    width="300" height="100" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+
+                            <div class="col-5">
+                                <p></p>
+                                <p>聯絡我們</p>
+                                <!-- LINE -->
+                                <a href="https://line.me/R/ti/p/@287lkmtd" target="_blank" title="Line"
+                                    class="social-icon line-icon">
+                                    <i class="fab fa-line"></i>
+                                </a>
+                                <!-- Facebook -->
+                                <a href="https://www.facebook.com/profile.php?id=61556129413714" target="_blank"
+                                    title="Facebook" class="social-icon facebook-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <!-- Instagram -->
+                                <a href="https://www.instagram.com/huatsaofeifei/" target="_blank" title="Instagram"
+                                    class="social-icon  instagram-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- js include 順序 1.bs 2.jq 3.self -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+                integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script>
+                $(document).ready(function () {
+
+                });
+            </script>
+</body>
+
+</html>
